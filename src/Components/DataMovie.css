@@ -1,0 +1,32 @@
+@keyframes colorChange {
+    0% { border-color: #ff0000; } 
+    25% { border-color: #00ff00; }
+    50% { border-color: #0000ff; } 
+    75% { border-color: #ffff00; } 
+    100% { border-color: #ff0000; } 
+  }
+
+.joke{
+    border-style: dashed;
+    background-color: black;
+    border-width: 0.2rem;
+    color: white;
+    font-size: larger;
+    border-radius: 1rem;
+    border-color: aqua;
+    padding: 0.6rem;
+    transition: all 0.3s ease;
+}
+
+.joke:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    color: rgb(0, 166, 216);
+    animation: colorChange 2s infinite;
+}
+
+p{
+    font-size: larger;
+    font-weight: bold;
+    color: red;
+}
